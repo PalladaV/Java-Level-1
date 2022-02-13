@@ -9,7 +9,7 @@ public class HomeWork2 {
         System.out.println(checkSumSign(8, 13)? "true" : "false");
         isPositiveOrNegative();
         System.out.println(isPositive(5)? "true" : "false");
-        printWordNTimes();
+        printWordNTimes("word", 5);
     }    
     
     static boolean checkSumSign(int a, int b) {
@@ -22,15 +22,12 @@ public class HomeWork2 {
     }
     
     static boolean isPositive(int a) {
-        if (a < 0) {
-        return true;
-        }
-        return false;
+        return a <= 0;
     }
     
-    static void printWordNTimes() {
-        for (int i = 1; i <= 5; i++) {  
-        System.out.println(i + "-" + "word");
+        static void printWordNTimes(String word, int times) {
+        for (int i = 0; i < times; i++) {  
+        System.out.println("word");
         }
     }
 }
