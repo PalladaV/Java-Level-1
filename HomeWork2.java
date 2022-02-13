@@ -18,12 +18,7 @@ public class HomeWork2 {
     
     static void isPositiveOrNegative() {     
         int a = -3;
-        
-        if (a >= 0) {
-        System.out.println("The number is positive");
-        } else {
-        System.out.println("The number is negative");
-        }
+        System.out.println(a >= 0? "The number is positive" : "The number is negative");
     }
     
     static boolean isPositive(int a) {
