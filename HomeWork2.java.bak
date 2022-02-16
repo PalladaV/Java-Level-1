@@ -22,7 +22,7 @@ public class HomeWork2 {
     }
     
     static boolean isPositive(int a) {
-        return a <= 0;
+        return a >= 0
     }
     
     static void printWordNTimes(String word, int times) {
