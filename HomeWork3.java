@@ -8,17 +8,17 @@
  
 public class HomeWork3 {
     public static void main(String[] args) {
-    invertArray();
-    fillArray();
-    changeArray();
-    fillDiagonal();
-    int[] arr = initArray(10, 5);
-    System.out.println("Result array: " + Arrays.toString(arr));
+        invertArray();
+        fillArray();
+        changeArray();
+        fillDiagonal();
+        int[] arr = initArray(10, 5);
+        System.out.println("Result array: " + Arrays.toString(arr));
     }    
     
     static void invertArray() {
         System.out.println("--- Exercise 1 ---");
-         int[] arr = new int[] { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
+        int[] arr = new int[] { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
         System.out.println("Before inversion: " + Arrays.toString(arr));
         for (int i = 0; i < arr.length; i++) {
             arr[i] = arr[i] == 0 ? 1 : 0;
