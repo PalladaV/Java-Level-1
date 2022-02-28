@@ -12,14 +12,14 @@ public class HomeWork5 {
     
     public void run() {
         Employee[] empArray = new Employee[5];
-		empArray[0] = new Employee("Petrov Ivan", "Manager", "petrov@mail.com", "89261110154",80000,30);
-		empArray[1] = new Employee("Ivanov Petr", "Engineer", "ivanov@mail.com", "89262220253",85000,46);
-		empArray[2] = new Employee("Sidorova Elena", "Accountant", "sidorova@mail.com", "89263330352",58000,34);
-		empArray[3] = new Employee("Sorokina Ekaterina", "Secretary", "sorokina@mail.com", "89264440451",50000,25);
-		empArray[4] = new Employee("Naumov Alexey", "Designer", "naumov@mail.com", "89265550550",60000,42);
+	empArray[0] = new Employee("Petrov Ivan", "Manager", "petrov@mail.com", "89261110154",80000,30);
+	empArray[1] = new Employee("Ivanov Petr", "Engineer", "ivanov@mail.com", "89262220253",85000,46);
+	empArray[2] = new Employee("Sidorova Elena", "Accountant", "sidorova@mail.com", "89263330352",58000,34);
+	empArray[3] = new Employee("Sorokina Ekaterina", "Secretary", "sorokina@mail.com", "89264440451",50000,25);
+	empArray[4] = new Employee("Naumov Alexey", "Designer", "naumov@mail.com", "89265550550",60000,42);
         for (Employee employee : empArray) {
-        	if (employee.getAge()>40) {
-    		    System.out.println(employee);
+            if (employee.getAge()>40) {
+    		System.out.println(employee);
             }
         }
     }
@@ -32,27 +32,27 @@ public class HomeWork5 {
         private int salary;
         private int age;
 
-	    public Employee(String name, String position, String email, String phone, int salary, int age) {
-	        this.name = name;
+	public Employee(String name, String position, String email, String phone, int salary, int age) {
+	    this.name = name;
             this.position = position;
             this.email = email;
             this.phone = phone;
             this.salary = salary;
             this.age = age;
-	    } 
+	} 
     
         public int getAge() {
-		    return age;
-	    }
+	    return age;
+        }
         
-	    @Override
-	    public String toString(){
-	   	    return "name='" + name + '\'' +
+	@Override
+	public String toString(){
+	    return "name='" + name + '\'' +
                     ", position='" + position + '\'' +
                     ", email='" + email + '\'' +
                     ", phone='" + phone + '\'' +
                     ", salary=" + salary +
                     ", age=" + age;
-	    } 
-    }
- }
+	} 
+    }     
+}      
